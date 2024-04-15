@@ -1,4 +1,4 @@
-resource "aws_instance" "my_instance" {
+resource "aws_instance" "ce_instance" {
   ami                         = var.ami_lnx_virg # ID da AMI do RHEL 9
   instance_type               = "t2.micro"       # Tipo de instância
   key_name                    = "CE-Mapfre"      # Nome da chave SSH
