@@ -17,7 +17,7 @@ terraform {
 
   backend "s3" {
     bucket = "ce-mapfre"
-    key    = "ce/aws-vm/terraform.tfstate"
+    key    = "ce/aws-vm-lx/terraform.tfstate"
     region = "us-east-1"
   }
 }
