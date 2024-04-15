@@ -16,7 +16,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "ce-mapfre"
+    bucket = "mapfre-tfenabled"
     key    = "ce/aws-vm-lx/terraform.tfstate"
     region = "us-east-1"
   }
@@ -37,7 +37,7 @@ provider "aws" {
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "ce-mapfre"
+    bucket = "mapfre-tfenabled"
     key    = "ce/aws-vpc/terraform.tfstate"
     region = "us-east-1"
   }
